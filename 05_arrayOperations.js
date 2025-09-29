@@ -31,7 +31,6 @@ console.log("filterNameStartByA [A] : "+result);
 
 
 
-
 /**
  * Utiliser la fonction .reduce sur le tableau passé en paramètre
  * retourne la somme des valeurs du tableau
@@ -97,12 +96,6 @@ let arryUsers = [
 
 const findUserById = (a,b) => a.find(a=>a.id === b).name ?? null;
 console.log("user avec id=3 : "+findUserById(arryUsers, 3));
-
-
-
-
-
-
 
 
 module.exports = {multiplyByTwo, filterNameStartByA, sum, findUserById};
