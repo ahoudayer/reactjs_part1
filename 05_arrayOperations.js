@@ -25,7 +25,7 @@ console.log("multiplyByTwo [1,3,5,7] : "+a);
   */
 
 const filterNameStartByA = ["spray", "elite", "exuberant", "destruction", "present"];
-const result = filterNameStartByA.filter((a) => a.includes("a"));
+const result = filterNameStartByA.filter((a) => a.startsWith("a"));
 console.log("filterNameStartByA [A] : "+result);
 // Expected output: Array ["exuberant", "destruction", "present"]
 

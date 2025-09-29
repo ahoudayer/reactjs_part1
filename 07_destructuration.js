@@ -22,7 +22,7 @@ console.log("extractFirstTwo : " +extractFirstTwo([1, 2, 3]));
  * exemple: [1, 2, 3] => [2, 3]
  */
 
-const extractRest = (a) => {const [b, ...c] = a; };
+const extractRest = (a, b) => {return ({b, ...c} = a)};
 console.log('extractRest ' + extractRest([1, 2, 3]));
 
 /**
