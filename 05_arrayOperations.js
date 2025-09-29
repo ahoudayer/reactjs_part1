@@ -83,8 +83,8 @@ console.log("sum with reduce [1,2,6,12] : " + sumWithInitial2([1,2,6,12]));
  *   - Vous ne pouvez pas utiliser de variable (autre que l'argument de la fonction)
   */
 
-const array = [5, 12, 8, 130, 44];
-const found = array.find((element) => element > 10);
+// const array = [5, 12, 8, 130, 44];
+// const found = array.find((element) => element > 10);
 // console.log(found);
 // Expected output: 12
 
@@ -95,7 +95,7 @@ let arryUsers = [
  {id: 4, name: 'Bar'},
 ];
 
-const findUserById = (a,b) => a.find(a=>a.id === b).name;
+const findUserById = (a,b) => a.find(a=>a.id === b).name ?? null;
 console.log("user avec id=3 : "+findUserById(arryUsers, 3));
 
 
