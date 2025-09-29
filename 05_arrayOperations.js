@@ -94,7 +94,7 @@ let arryUsers = [
  {id: 4, name: 'Bar'},
 ];
 
-const findUserById = (a,b) => a.find(a=>a.id ===b);
+const findUserById = (a,b) => a.find(a=>a.id === b).name;
 console.log(findUserById(arryUsers, 3));
 
 
