@@ -55,13 +55,13 @@ const sumWithInitial = sum.reduce(
 console.log("sum with reduce [1, 2, 3, 4] : " + sumWithInitial);
 // Expected output: 10
 
-let sumWithInitial2 = a2 => (
+let sumWithInitial2 = a2 => (a2 != null ??
   a2.reduce(
   (acc, i) => acc + i,
     0
   )
 ) 
-console.log("sum with reduce [1,2,6,12] : " + sumWithInitial2([1,2,6,12]));
+console.log("sum with reduce [1,2,6,12] : " + sumWithInitial2([1,2,6,12] ));
 
 
 /**
