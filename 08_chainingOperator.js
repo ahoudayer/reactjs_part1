@@ -16,6 +16,14 @@
  * 
  */
 
-const getGroupName = null;
+
+let var1 = {name: "John", group: { name: "admin"}};
+const getGroupName = (a, b) => {
+    a.find(a=>a.name ??null)
+
+    b.find(a=>a.group ??null).name ?? null
+}
+console.log("getGroupName('John', var1) : " + getGroupName("John", var1));
+
 
 module.exports = {getGroupName};
